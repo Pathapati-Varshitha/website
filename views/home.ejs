@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+<div class="mainPageTitle">
+  <h1>Delay predictions and stats about airlines in the US</h1>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-lg-4 mycard">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Predict delay</h5>
+        <p class="card-text"><%= predictPageContent %></p>
+        <a href="predict" class="btn btn-primary">Click here</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mycard">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Recommend Airlines </h5>
+        <p class="card-text"><%= recommendPageContent %></p>
+        <a href="recommend" class="btn btn-primary">Click here</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mycard">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Stats</h5>
+        <p class="card-text"><%= statsPageContent %></p>
+        <a href="stats" class="btn btn-primary">Click here</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>

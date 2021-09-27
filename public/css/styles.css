@@ -1,0 +1,80 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1768AC !important;
+}
+
+.btn-primary{
+  background-color: #1768AC !important;
+}
+
+.footer-padding {
+	padding-bottom:60px;
+}
+
+.footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1768AC;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.pageTitle {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 2%;
+  color: #1768AC
+}
+
+.description{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif
+
+}
+
+.dropdown{
+  margin-top: 4%
+}
+
+.submit{
+  margin: auto;
+  margin-top: 2%
+
+}
+
+.mainPageTitle{
+  text-align: center;
+  padding: 5%;
+  color: #1768AC;
+  font-family: 'Roboto', sans-serif
+}
+
+.icon:hover {
+  color: #1768AC;
+}
+
+.mycard {
+  padding: 2%;
+
+}

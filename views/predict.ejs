@@ -1,0 +1,34 @@
+<%- include('partials/header'); -%>
+<h1 class="pageTitle">PREDICT DELAY</h1>
+<p class="description"><%= predictPageContent %></p>
+
+
+<%- include('partials/airportdata'); -%>
+<datalist id="airlinedata">
+  <% for (var i = 0; i < myairlinecodes.length; i++){ %>
+  <option><%= myairlinecodes[i] %></option>
+  <% } %>
+</datalist>
+
+
+<form action="/predict" method="post">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <lable for='airport' class="form-label">Origin: </lable>
+      <input type="text" list="airportdata" name="origin" autocomplete="off" class="form-control">
+    </div>
+    <div class="col-lg-4 col-md-6"">
+      <lable for='airport' class=" form-label">Destination: </lable>
+      <input type="text" list="airportdata" name="destination" autocomplete="off" class="form-control">
+    </div>
+    <div class="col-lg-4 col-md-3">
+      <lable for='airline' class="form-label">Airline: </lable>
+      <input type="text" list="airlinedata" name="airline" autocomplete="off" class="form-control">
+    </div>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary btn-lg submit ">Submit</button>
+  </div>
+</form>
+
+<%- include('partials/footer'); -%>

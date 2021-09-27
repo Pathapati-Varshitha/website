@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+<h1 class="pageTitle">STATS</h1>
+<p class="description"><%= statsPageContent %></p>
+
+<datalist id="airlinedata">
+  <% for (var i = 0; i < myairlinecodes.length; i++){ %>
+  <option><%= myairlinecodes[i] %></option>
+  <% } %>
+</datalist>
+
+<form action="/stats" method="post">
+  <div class="row">
+    <div class="col-lg-12">
+      <lable for='airline' class="form-label">Airline: </lable>
+      <input type="text" list="airlinedata" name="airline" autocomplete="off" class="form-control">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <label for="start">Start year:</label>
+      <input class="form-control" name="start" autocomplete="off">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <label for="start">End year:</label>
+      <input class="form-control" name="end" autocomplete="off">
+    </div>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary btn-lg submit ">Submit</button>
+  </div>
+</form>
+
+
+<%- include('partials/footer'); -%>

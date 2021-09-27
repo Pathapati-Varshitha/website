@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+<h1 class = "pageTitle">RECOMMEND</h1>
+<p class= "description"><%= recommendPageContent %></p>
+
+<%- include('partials/airportdata'); -%>
+
+<form action="/recommend" method="post">
+  <div class="row">
+    <div class="col-lg-6">
+      <lable for='airport' class="form-label">Origin: </lable>
+      <input type="text" list="airportdata" name="origin" autocomplete="off" class="form-control">
+    </div>
+    <div class="col-lg-6"">
+      <lable for='airport' class="form-label">Destination: </lable>
+      <input type="text" list="airportdata" name="destination" autocomplete="off" class="form-control">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary btn-lg submit ">Submit</button>
+    </div>
+    </div>
+  </form>
+
+<%- include('partials/footer'); -%>
